@@ -4,8 +4,8 @@ const langArr = {
        "ua": "Привіт!",
    }, 
    "hi__subTitle": {
-       "en": "I'm Konstantin, <br><span>frontend developer</span>",
-       "ua": "Я Костянтин, <br><span>frontend розробник</span>",
+       "en": "I'm Ihor, <br><span>frontend developer</span>",
+       "ua": "Я Ігор, <br><span>frontend розробник</span>",
    }, 
    "header__link__about": {
        "en": `<a data-goto=".hi" href="#">About Me</a>`,
