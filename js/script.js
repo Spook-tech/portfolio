@@ -89,7 +89,17 @@ function changeURLLanguage() {
     location.reload();
     MenuLinksUpdate();
 }
-
+let loadMore = document.querySelector('.projects__load-more');
+loadMore.addEventListener('click', () => {
+   let toLoad = ['.projects__work-kevin', '.projects__work-crapto', '.projects__work-coffe', '.projects__work-gocorona'];
+   console.log('loll');
+   for (i = 0; i != toLoad.length; i++){
+      console.log(toLoad[i]);
+      let elem = document.querySelector(`${toLoad[i]}`)
+      elem.style.display = 'flex';
+      elem.classList.add('active');
+   }
+});
 function changeLanguage() {
     let hash = window.location.hash;
     hash = hash.substr(1);
@@ -109,16 +119,3 @@ function changeLanguage() {
 
 }
 changeLanguage();
-
-// Load more
-
-let loadMore = document.querySelector('.projects__load-more');
-loadMore.addEventListener('click', () => {
-   let toLoad = ['.projects__work-kevin', '.projects__work-crapto', '.projects__work-coffe', '.projects__work-gocorona'];
-   for (i = 0; i != toLoad.length; i++){
-      console.log(toLoad[i]);
-      let elem = document.querySelector(`${toLoad[i]}`)
-      elem.style.display = 'flex';
-      elem.classList.add('active');
-   }
-});
